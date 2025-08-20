@@ -11,44 +11,36 @@ run build = npm run build
 
 Folder Structure =>
 src/
-├── api/                 # API calls and services
-│   └── countriesApi.js
-│
-├── assets/              # Images, icons, and static assets
-│
-├── components/          # Reusable UI components
-│   ├── ChatInput.jsx
-│   ├── ChatMsg.jsx
-│   ├── CopyClip.jsx
-│   └── DarkModeToggle.jsx
-│
-├── hooks/               # Custom React hooks
-│   └── useDebounce.js
-│
-├── pages/               # Page-level components
-│   ├── ChatRoom.jsx
-│   ├── DashboardPage.jsx
-│   └── LoginPage.jsx
-│
-├── store/               # Zustand state management
-│   ├── authStore.js
-│   ├── chatRoomStore.js
-│   ├── chatStore.js
-│   ├── index.js
-│   └── msgStore.js
-│
-├── styles/              # CSS styling files
-│   ├── chatRoom.css
-│   └── main.css
-│
-├── utils/               # Utility/helper functions
-│   ├── copyToClipboard.js
-│   ├── fakeApi.js
-│   └── localStorage.js
-│
-├── App.jsx              # Main application component
-├── index.js             # React app entry point
-└── main.jsx             # Vite entry file
+├── api/ # API calls and services
+│ └── countriesApi.js
+├── assets/ # Images, icons, and static assets
+├── components/ # Reusable UI components
+│ ├── ChatInput.jsx
+│ ├── ChatMsg.jsx
+│ ├── CopyClip.jsx
+│ └── DarkModeToggle.jsx
+├── hooks/ # Custom React hooks
+│ └── useDebounce.js
+├── pages/ # Page-level components
+│ ├── ChatRoom.jsx
+│ ├── DashboardPage.jsx
+│ └── LoginPage.jsx
+├── store/ # Zustand state management
+│ ├── authStore.js
+│ ├── chatRoomStore.js
+│ ├── chatStore.js
+│ ├── index.js
+│ └── msgStore.js
+├── styles/ # CSS styling files
+│ ├── chatRoom.css
+│ └── main.css
+├── utils/ # Utility/helper functions
+│ ├── copyToClipboard.js
+│ ├── fakeApi.js
+│ └── localStorage.js
+├── App.jsx # Main application component
+├── index.js # React app entry point
+└── main.jsx # Vite entry file
 
 Implemented Features :
 1. Throttling
