@@ -1,0 +1,120 @@
+:root {
+  --chatroom-max-width: 700px;
+  --chatroom-gap: 8px;
+  --chatroom-radius: 6px;
+  --chatroom-border: 1px solid #ddd;
+  --chatroom-padding: 12px;
+  --chatroom-header-padding: 10px 16px;
+  --chatroom-bg-light: #fafafa;
+  --chatroom-bg-dark: #141414;
+  --title-dark-color: #003d5c; 
+}
+
+.chatroom {
+  max-width: var(--chatroom-max-width);
+  margin: 20px auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  border: var(--chatroom-border);
+  border-radius: var(--chatroom-radius);
+  background: transparent; 
+  box-sizing: border-box;
+}
+
+.chatroom_header {
+  padding: 0;
+  border-bottom: 1px solid #ddd;
+}
+.chatroom_header-inner {
+  width: 100%;
+  padding: var(--chatroom-header-padding);
+  align-items: center;text-align: center;
+  display: flex;
+}
+
+.chatroom_title {
+  margin: 0 !important;
+}
+
+.chatroom_messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: var(--chatroom-padding);
+  display: flex;
+  flex-direction: column;
+  gap: var(--chatroom-gap);
+  background-color: var(--chatroom-bg-light);
+  transition: background-color 0.15s linear;
+}
+
+.chatroom_loading {
+  text-align: center;
+}
+
+.chatroom_empty {
+  margin: 0;
+}
+
+.chatroom_list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chatroom_typing {
+  font-style: italic;
+  margin-left: 8px;
+}
+
+.chatroom_input-area {
+  padding: 8px 12px;
+  border-top: 1px solid #eee;
+  background: transparent;
+}
+
+.chatroom--dark .chatroom_messages {
+  background-color: var(--chatroom-bg-dark);
+}
+
+.chatroom--dark .chatroom_title {
+  color: var(--title-dark-color) !important;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+
+/* Login Page CSS */
+
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 60px;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    margin-top: 30px;
+    padding: 16px;
+  }
+}
